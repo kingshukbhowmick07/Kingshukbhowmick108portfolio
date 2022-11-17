@@ -90,13 +90,16 @@ body .background{
 @media screen and (max-width: 475px) {
     body .background{
       height: 25vh;
-      position: absolute;
+      /* position: absolute; */
       left: 27%;
       top: 30%;
     }
 
     .icons{
         display: flex;
+        /* position: relative; */
+        flex-wrap: wrap;
+        flex-direction: row;
     }
 
   }
@@ -119,13 +122,17 @@ body .background{
 
 .icons{
     display: block;
-    width: 15%;
     padding-top: 7vh;
     padding-left: 4vh;
 }
+.icon{
+    justify-content: center;
+    line-height: 5;
+    align-items: center;
+}
 .icons .icon img{
     height: 6vh;
-    padding-bottom: 4vh;
+
 }
 
 
